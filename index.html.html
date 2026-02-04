@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>포트폴리오</title>
+    <!--폰트어썸 CDN : -->
+
+    <script
+      src="https://kit.fontawesome.com/4ec79785b5.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <!-- 메뉴바 -->
+  <body>
+    <!-- 마우스 파티클 -->
+    <canvas id="particleCanvas"></canvas>
+
+    <header class="header">
+      <nav class="nav">
+        <div class="nav-left">
+          <h1 class="logo">NAHAESU</h1>
+        </div>
+
+        <ul class="menu">
+          <li><a href="#home">HOME</a></li>
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="#project">PROJECT</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+        </ul>
+        <button class="hamburger">☰</button>
+      </nav>
+    </header>
+
+    <!-- 시작화면 HOME -->
+    <section class="start" id="home">
+      <div class="title">
+        <div class="top_left">NAHAESU</div>
+        <div class="bottom_right">PORTFOLIO</div>
+      </div>
+    </section>
+
+    <!-- 자기소개 ABOUT -->
+    <section class="about" id="about">
+      <div class="about-box">
+        <h2>ABOUT ME</h2>
+        <p class="intro">
+          안녕하세요.<br />프론트엔드 개발자를 꿈꾸는 나해수 입니다.
+        </p>
+
+        <ul class="info">
+          <li><strong>Age</strong> 2003.06.04</li>
+          <li><strong>Skill</strong> HTML / CSS / JavaScript 배우는 중. . .</li>
+          <li>
+            <strong>Hobby</strong> 만화보기, 유튜브 보기, 빈티지옷 구경하기
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 포트폴리오 PROJECT -->
+    <section class="project" id="project">
+      <h2>PROJECT</h2>
+      <div class="card-wrap">
+        <!-- 1 -->
+        <div
+          class="card"
+          onclick="
+            window.open('http://127.0.0.1:5500/20260130/MobileFirst/index.html')
+          "
+        >
+          <img src="../images/MobileFirst.png" class="thumb" />
+
+          <div class="card-overlay">
+            <h3>MobileFirst</h3>
+            <p>웹 반응형</p>
+          </div>
+        </div>
+
+        <!-- 2 -->
+        <div
+          class="card"
+          onclick="window.open('http://127.0.0.1:5500/20260127/블루보틀.html')"
+        >
+          <img src="../images/BlueBottleCoffee.png" class="thumb" />
+
+          <div class="card-overlay">
+            <h3>BlueBottleCoffee</h3>
+            <p>블루보틀 홈페이지</p>
+          </div>
+        </div>
+
+        <!-- 3 -->
+        <div
+          class="card"
+          onclick="
+            window.open(
+              'http://127.0.0.1:5500/20260128/한국금융주택공사페이지과제.html',
+            )
+          "
+        >
+          <img src="../images/HF.Bank.png" class="thumb" />
+
+          <div class="card-overlay">
+            <h3>HF.Bank</h3>
+            <p>한국주택금융공사 버튼</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 마지막 CONTACT -->
+    <section id="contact" class="contact">
+      <h2 class="contact-title">CONTACT</h2>
+
+      <div class="contact-wrapper">
+        <!-- 박스 -->
+        <div class="contact-box">
+          <a href="mailto:example@email.com" class="contact-item">
+            <i class="fa-solid fa-envelope"></i>
+            <span>example@email.com</span>
+          </a>
+
+          <a
+            href="https://github.com/imCwater"
+            target="_blank"
+            class="contact-item"
+          >
+            <i class="fa-brands fa-github"></i>
+            <span>github.com/imCwater</span>
+          </a>
+
+          <!-- 블로그는 이미지 -->
+          <a
+            href="https://blog.naver.com/imcwater"
+            target="_blank"
+            class="contact-item"
+          >
+            <img src="../images/블로그로고.png" class="blog-icon" />
+            <span>blog.naver.com/imcwater</span>
+          </a>
+        </div>
+
+        <!--음표 -->
+        <img src="../images/music note.png" class="floating-note" />
+      </div>
+    </section>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
